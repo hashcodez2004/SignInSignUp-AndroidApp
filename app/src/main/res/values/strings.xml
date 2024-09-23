@@ -9,4 +9,10 @@
     <string name="terms_and_conditions">Terms and Conditions</string>
     <string name="by_continuing_you_agree_to_the_amazon_s">By continuing you agree to the Amazon’s</string>
     <string name="already_have_an_account_log_in">Already have an account? Log In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="phone_number_or_email">Phone number or Email</string>
+    <string name="sign_in">Sign in</string>
+    <string name="or">OR</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="new_here_sign_up">New here? Sign up</string>
 </resources>
