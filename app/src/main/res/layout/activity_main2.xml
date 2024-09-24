@@ -91,11 +91,11 @@
 
     <Button
         android:id="@+id/signIn_google"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:text="@string/sign_in_with_google"
         android:drawableLeft="@drawable/google_icon"
-        android:drawablePadding="8dp"
+        android:gravity="center"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
@@ -104,7 +104,6 @@
         app:layout_constraintTop_toBottomOf="@id/or"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
-
 
     <TextView
         android:layout_width="wrap_content"
