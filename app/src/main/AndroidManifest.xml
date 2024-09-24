@@ -12,24 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginSignup"
         tools:targetApi="31">
+
+        <!-- Set .MainActivity2 as the launcher (starter) activity -->
         <activity
             android:name=".MainActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- .MainActivity as the second activity (no launcher intent filter) -->
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

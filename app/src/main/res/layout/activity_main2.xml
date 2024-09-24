@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -16,17 +17,18 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="48dp"/>
+        android:layout_marginTop="48dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/forget_pwd"
         android:text="@string/forgot_password"
+        android:textColor="#1983FF"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/login_image"
         android:layout_marginRight="24dp"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -39,32 +41,43 @@
         android:layout_marginTop="16dp"
         android:layout_marginRight="24dp"
         android:layout_marginLeft="24dp"
-        android:background="@drawable/rounded_edittext"/>
+        android:background="@drawable/rounded_edittext" />
 
-    <EditText
+    <!-- Password Field with Show/Hide Toggle -->
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:id="@+id/pwd"
-        android:hint="@string/password"
+        app:passwordToggleEnabled="true"
+        app:hintEnabled="false"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/email_pno"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginLeft="24dp"
-        android:background="@drawable/rounded_edittext"/>
+        app:layout_constraintTop_toBottomOf="@id/email_pno">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textPassword"
+            android:hint="@string/password" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:id="@+id/login_btn"
         android:text="@string/sign_in"
+        android:backgroundTint="#1983FF"
         app:layout_constraintTop_toBottomOf="@+id/pwd"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -74,7 +87,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/login_btn"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp" />
 
     <Button
         android:id="@+id/signIn_google"
@@ -91,8 +104,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="33dp"
@@ -103,18 +114,20 @@
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="36dp"
         android:id="@+id/login_txt_view3"
+        android:textColor="#1983FF"
         app:layout_constraintTop_toBottomOf="@id/login_txt_view2"
         app:layout_constraintBottom_toBottomOf="@id/login_txt_view2"
         android:text="@string/terms_and_conditions"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -125,6 +138,6 @@
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintLeft_toLeftOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
