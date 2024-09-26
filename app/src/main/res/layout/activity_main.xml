@@ -37,6 +37,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginTop="16dp"
+        android:textSize="14sp"
         android:hint="@string/full_name" />
 
     <EditText
@@ -51,7 +52,8 @@
         app:layout_constraintTop_toBottomOf="@id/full_name"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="16dp" />
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"/>
 
     <!-- Password Field with Show/Hide Toggle -->
     <com.google.android.material.textfield.TextInputLayout
@@ -63,6 +65,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginTop="16dp"
+        app:boxCollapsedPaddingTop="0dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/email">
@@ -72,28 +75,33 @@
             android:layout_height="match_parent"
             android:background="@drawable/rounded_edittext"
             android:inputType="textPassword"
+            android:padding="0dp"
+            android:textSize="14sp"
             android:hint="@string/password" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Confirm Password Field with Show/Hide Toggle -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:id="@+id/confirm_password"
         app:passwordToggleEnabled="true"
         app:hintEnabled="false"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginTop="16dp"
+        app:boxCollapsedPaddingTop="0dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/password">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="48dp"
+            android:padding="0dp"
             android:background="@drawable/rounded_edittext"
             android:inputType="textPassword"
+            android:textSize="14sp"
             android:hint="@string/confirm_password" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -102,6 +110,7 @@
         android:layout_height="48dp"
         android:id="@+id/signup_btn"
         android:text="@string/sigh_up"
+        android:textSize="16sp"
         android:backgroundTint="#1983FF"
         app:layout_constraintTop_toBottomOf="@+id/confirm_password"
         android:layout_marginTop="16dp"
@@ -112,8 +121,9 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="33dp"
+        android:layout_height="wrap_content"
         android:id="@+id/txt_view2"
+        android:textSize="14sp"
         app:layout_constraintTop_toBottomOf="@id/signup_btn"
         android:text="@string/by_continuing_you_agree_to_the_amazon_s"
         android:layout_marginTop="16dp"
@@ -124,10 +134,10 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="33dp"
+        android:layout_height="wrap_content"
         android:id="@+id/txt_view3"
+        android:textSize="14sp"
         app:layout_constraintTop_toBottomOf="@id/txt_view2"
-        app:layout_constraintBottom_toBottomOf="@id/txt_view2"
         android:text="@string/terms_and_conditions"
         android:textColor="#1983FF"
         android:layout_marginLeft="24dp"
@@ -139,6 +149,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:id="@+id/txt_view4"
+        android:textSize="14sp"
         android:text="@string/already_have_an_account_log_in"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginLeft="24dp"

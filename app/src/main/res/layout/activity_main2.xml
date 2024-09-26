@@ -23,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/forget_pwd"
+        android:textSize="14sp"
         android:text="@string/forgot_password"
         android:textColor="#1983FF"
         app:layout_constraintRight_toRightOf="parent"
@@ -35,6 +36,7 @@
         android:layout_height="48dp"
         android:id="@+id/email_pno"
         android:hint="@string/phone_number_or_email"
+        android:textSize="14sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/forget_pwd"
@@ -50,6 +52,7 @@
         android:id="@+id/pwd"
         app:passwordToggleEnabled="true"
         app:hintEnabled="false"
+        app:boxCollapsedPaddingTop="0dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginTop="16dp"
@@ -63,6 +66,8 @@
             android:layout_height="match_parent"
             android:background="@drawable/rounded_edittext"
             android:inputType="textPassword"
+            android:padding="0dp"
+            android:textSize="14sp"
             android:hint="@string/password" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -76,6 +81,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
+        android:textSize="16sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
@@ -84,6 +90,7 @@
         android:layout_height="18dp"
         android:id="@+id/or"
         android:text="@string/or"
+        android:textSize="14sp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/login_btn"
@@ -91,15 +98,19 @@
 
     <Button
         android:id="@+id/signIn_google"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
         android:text="@string/sign_in_with_google"
-        android:drawableLeft="@drawable/google_icon"
+        app:icon="@drawable/google_icon"
+        app:iconTint="@null"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
         android:gravity="center"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:backgroundTint="#F5F7FA"
+        android:textSize="16sp"
         android:textColor="@android:color/black"
         app:layout_constraintTop_toBottomOf="@id/or"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -107,23 +118,24 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="33dp"
+        android:layout_height="wrap_content"
         android:id="@+id/login_txt_view2"
         app:layout_constraintTop_toBottomOf="@id/signIn_google"
         android:text="@string/by_continuing_you_agree_to_the_amazon_s"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
+        android:textSize="14sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="36dp"
+        android:layout_height="wrap_content"
         android:id="@+id/login_txt_view3"
         android:textColor="#1983FF"
         app:layout_constraintTop_toBottomOf="@id/login_txt_view2"
-        app:layout_constraintBottom_toBottomOf="@id/login_txt_view2"
+        android:textSize="14sp"
         android:text="@string/terms_and_conditions"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
@@ -138,6 +150,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
+        android:textSize="14sp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
 
